@@ -1,0 +1,12 @@
+﻿@model TutoMVC.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Random";
+}
+
+<h2> @Model.Movie.Name   </h2>
+@{
+    foreach(var c in Model.Customers)
+    {
+        <h3>@c.name</h3>
+    }
+}
